@@ -1,0 +1,145 @@
+
+.Quotes {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: #4E6E81;
+    width: 95%;
+    height: 100%;
+    position: absolute;
+    border: 1px solid black;
+    margin: 2%;
+}
+
+.Quotes strong{
+    font-size: x-large;
+    padding: 0 70px;
+}
+
+.Block_Quote {
+    max-width: 744px;
+    max-height: 200px;
+    margin: 0px 40px 150px 5%;
+}
+
+.Loading {
+    position: relative;
+    z-index: 2;
+    background-color: #DF7857;
+    width: 100%;
+    height: 100px;
+    bottom: -20px;
+}
+
+.Quotes hr{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.Quotes h3 {
+    position: relative;
+    margin: 20px 50px 0px 50px;
+}
+
+.Quotes h1{
+    position: relative;
+    padding-left: 180px;
+}
+
+.Quotes button{
+    width: 150px;
+    padding: 15px;
+    position: relative;
+    border: none;
+    background: #495579;
+    color: white;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 1px 1px 8px 2px rgba(0,0,0,0.75);
+    bottom: 75px;
+    left: 28%;
+}
+
+@media (max-width: 600px){
+
+    .Quotes {
+        margin: 0%;
+        border: none;
+    }
+    
+    .Quotes h3 {
+        margin: 0;
+    }
+
+    .Quotes button {
+        left: 26%;
+        bottom: 80px;
+        padding: 20px 50px;
+    }
+
+    .Quotes strong {
+        padding: 0;
+        position: absolute;
+        
+    }
+
+    .Quotes h1 {
+        padding-left: 10%;
+    }
+
+    .Block-Quot {
+        margin: 20px 40px;
+    }
+}
+
+.Quotes button span {
+    position: absolute;
+    background: black;
+    transition: .5s;
+}
+
+.Quotes button span:nth-child(1){
+    width: 100%;
+    height: 3px;
+    top: 0;
+    left: -100%;
+}
+
+.Quotes button span:nth-child(2){
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    right: -100%;
+}
+
+.Quotes button span:nth-child(3){
+    width: 3px;
+    height: 100%;
+    bottom: -100%;
+    left: 0;
+}
+
+.Quotes button span:nth-child(4){
+    width: 3px;
+    height: 100%;
+    top: -100%;
+    right: 0;
+}
+
+.Quotes button:hover span:nth-child(1) {
+    left: 0;
+}
+
+.Quotes button:hover span:nth-child(2) {
+    right: 0;
+}
+
+.Quotes button:hover span:nth-child(3) {
+    bottom: 0;
+}
+
+.Quotes button:hover span:nth-child(4) {
+    top: 0;
+}

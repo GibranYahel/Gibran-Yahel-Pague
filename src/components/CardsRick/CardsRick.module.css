@@ -1,0 +1,86 @@
+.Characters {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 30px;
+    padding: 10px;
+}
+
+.Character_card {
+    width: 306px;
+    height: 300px;
+    background-color: #ccc;
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+} 
+
+.Character_img {
+    border-radius: 25px;
+    border: 3px solid rgba(0, 0, 0, 0.9);
+    height: 294px;
+    width: 301px;
+}
+
+.Character_info {
+    background-color: rgba(225, 225, 225, 0.6);
+    border: 6px solid rgba(12, 91, 129, 0.9);
+    border-radius: 25px;
+    position: absolute;
+    width: 296px;
+    height: 290px;
+    transition: .4s;
+    top: 300px;
+    z-index: 3;
+}
+
+#Humans {
+    color: #379237;
+}
+
+#Aliens {
+    color: #FF1E1E;
+}
+
+#Alive {
+    color: #2E4F4F;
+}
+
+#Dead {
+    color: #820000;
+}
+
+.Character_info h2:nth-child(2){
+    position: absolute;
+    top: 185px;
+}
+
+.Character_info h2:nth-child(3){
+    position: absolute;
+    top: 230px;
+}
+
+.Character_card:hover  .Character_info {
+    top: 0px;
+}
+
+.Character_card h2 {
+    margin: 0 0 0 10px;
+}
+
+.Search {
+    position: absolute;
+    top: 220px;
+    left: 450px;
+}
+
+.ListCharacter {
+    position: absolute;
+    top: 250px;
+    left: 450px;
+}
+
+.Search input {
+    width: 200px;
+    height: 30px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+}

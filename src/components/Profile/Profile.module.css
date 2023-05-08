@@ -1,0 +1,91 @@
+.Profile {
+    display: grid;
+    grid-template-columns: auto 850px;
+    font-size: 20px;
+}
+
+.Name_Detail {
+    position: absolute;
+    display: grid;
+    place-content: center;
+    right: 160px;
+    top: -20px;   
+}
+
+.Name_Detail h1 {
+    margin-bottom: 15px;
+    height: 25px;
+}
+
+.Name_Detail p {
+    margin: auto;
+}
+
+.Profile img {
+    width: 270px;
+    height: 350px;
+    border-radius: 1rem;
+    margin-top: 90px;
+    border: 4.7px solid #7B8FA1;
+}
+
+.Presentation {
+    margin: 110px 0 0 50px;
+}
+
+@media (max-width: 1250px) {
+    .Profile {
+        grid-template-columns: auto 750px;
+    }
+
+    .Name_Detail {
+        top: -10px;
+    }
+
+    .Profile img {
+        width: 260px;
+    }
+
+    .Presentation {
+        margin: 120px 0 0 10px;
+    }
+}
+
+@media (max-width: 1110px) {
+    .Profile {
+        grid-template-columns: auto;
+    }
+
+    .Profile img {
+        width: 260px;
+        margin: 100px 0 0 2%;
+    }
+
+    .Presentation {
+        margin: 25px 0 0 20px;
+    }
+
+    .Name_Detail {
+        top: 200px;
+        right: 80px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .Name_Detail {
+        top: 200px;
+        right: 2.5%;
+    }
+}
+
+@media (max-width: 980px) {
+    .Name_Detail {
+        display: none;
+    } 
+
+    .Profile img {
+        margin: 80px auto 0 auto;
+        height: 300px;
+        width: 210px;
+    }
+}
