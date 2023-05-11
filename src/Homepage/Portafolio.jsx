@@ -14,6 +14,7 @@ export const Portafolio = () => {
       </div>
       <div className={css.Interested}>
          <Interested />
+         <hr />
       </div>
       <div className={css.Slider}>
         <SliderHome />
