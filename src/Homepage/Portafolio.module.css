@@ -1,6 +1,17 @@
-.Portafolio {
-    display: grid;
+.lightTheme {
     background-color: floralwhite;
+    display: grid;
+    width: 95%;
+    height: auto;
+    margin: 30px;
+    border: 4.5px solid black;
+    border-radius: 15px;
+    position: relative;
+}
+
+.darkTheme {
+    background-color: #666666;
+    display: grid;
     width: 95%;
     height: auto;
     margin: 30px;

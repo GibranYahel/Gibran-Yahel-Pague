@@ -17,7 +17,7 @@
     width: 175px;
     height: 175px;
     cursor: pointer;
-    filter: drop-shadow(3px 3px 0.2em #495579);
+    filter: drop-shadow(3px 4px 0.2em #394867);
 }
 
 .CardInfo {
@@ -40,25 +40,25 @@
 }
 
 #One:hover {
-    filter: drop-shadow(3px 2px 0.2em #FC4F00); 
+    filter: drop-shadow(3px 4px 0.2em #FC4F00); 
 }
 
 #Two:hover {
-    filter: drop-shadow(3px 2px 0.2em #FF0075); 
+    filter: drop-shadow(3px 4px 0.2em #FF0075); 
 }
 
 #Three:hover {
-    filter: drop-shadow(3px 2px 0.2em #9C19E0); 
+    filter: drop-shadow(3px 4px 0.2em #9C19E0); 
 }
 
 #Four:hover {
-    filter: drop-shadow(3px 2px 0.2em #0008C1); 
+    filter: drop-shadow(3px 4px 0.2em #0008C1); 
 }
 
 #Five:hover {
-    filter: drop-shadow(3px 2px 0.2em #16FF00); 
+    filter: drop-shadow(3px 4px 0.2em #16FF00); 
 }
 
 #Six:hover {
-    filter: drop-shadow(3px 2px 0.2em #E21818); 
+    filter: drop-shadow(3px 4px 0.2em #E21818); 
 }

@@ -1,15 +1,18 @@
 import { createContext, useState } from 'react'
 
-const ThemeModeContext = createContext();
+export const ThemeModeContext = createContext();
 
-export const ThemeModeContextProvider = ({children}) => {
-    const [themeMode, setThemeMode] = useState(false);
-
+export const ThemeModeProvider = ({children}) => {
+    const [theme, setTheme] = useState('light');
+    const toggleTheme = () => {
+        setTheme(theme === 'dark' ? 'light' : 'dark');
+      };
+    console.log('THEME:', theme)
 
     return ( 
         <ThemeModeContext.Provider value={{
-            themeMode,
-            setThemeMode
+            theme,
+            toggleTheme
         }}>
             {children}
         </ThemeModeContext.Provider>

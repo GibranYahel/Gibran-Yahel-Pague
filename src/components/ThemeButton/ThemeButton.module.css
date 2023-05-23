@@ -1,0 +1,31 @@
+.ButtonBox {
+    background-color: #526D82;
+    width: 70px;
+    height: 30px;
+    margin-left: 300px;
+    border-radius: 15px;
+}
+
+.ButtonBall {
+    position: absolute;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: #FFED00;
+}
+
+/* #dark {
+    background-color: #526D82;
+    width: 70px;
+    height: 30px;
+    margin-left: 300px;
+    border-radius: 15px;
+}
+
+#dark {
+    position: absolute;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: #FFED00;
+} */
