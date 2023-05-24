@@ -21,12 +21,20 @@
     margin: auto;
 }
 
-.Profile img {
+.ImageLight {
     width: 270px;
     height: 350px;
     border-radius: 1rem;
     margin-top: 90px;
-    border: 4.7px solid #7B8FA1;
+    border: 4.7px solid #567189;
+}
+
+.ImageDark {
+    width: 270px;
+    height: 350px;
+    border-radius: 1rem;
+    margin-top: 90px;
+    border: 4.7px solid #9BA4B5;
 }
 
 .Presentation {

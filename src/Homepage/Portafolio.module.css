@@ -10,14 +10,19 @@
 }
 
 .darkTheme {
-    background-color: #666666;
+    color: white;
+    background-color: #454545;
     display: grid;
     width: 95%;
     height: auto;
     margin: 30px;
-    border: 4.5px solid black;
+    border: 5px solid black;
     border-radius: 15px;
     position: relative;
+}
+
+.darkTheme .Profile span {
+    color: white;
 }
 
 .Portafolio hr {

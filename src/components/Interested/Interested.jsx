@@ -1,7 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import css from './Interested.module.css'
+import { ThemeModeContext } from '../../context'
 
 export const Interested = () => {
+  const { theme } = useContext(ThemeModeContext)
   const [ position, setPosition ] = useState({ 
     info1: { x: 190, y: 185 },
     info2: { x: 190, y: 185 }, 
@@ -15,7 +17,8 @@ export const Interested = () => {
 
   return (
     <div className={css.Interested}>
-      <div className={css.CardSmall} onClick={() => setPosition({ ...position, info1: { x: 0, y: 0 }}) }>
+      <div className={theme === 'dark' ? css.CardSmallDark : css.CardSmallLight } 
+      onClick={() => setPosition({ ...position, info1: { x: 0, y: 0 }}) } >
         <img src="src/images/Interested_Images/red.png" id={css.One} alt="" />
         <div className={css.CardInfo} style={{ left: info1.x, top: info1.y }} onMouseLeave={() => setPosition({ ...position, info1: { x: 190, y: 185 }})}>
           <h2><strong>Cyber Security</strong></h2>
@@ -23,7 +26,8 @@ export const Interested = () => {
             nuestra información y mantener la confianza en la tecnología digital.</p>
         </div>
       </div>
-      <div className={css.CardSmall} onClick={() => setPosition({ ...position, info2: { x: 0, y: 0 }})}>
+      <div className={theme === 'dark' ? css.CardSmallDark : css.CardSmallLight } 
+      onClick={() => setPosition({ ...position, info2: { x: 0, y: 0 }})} >
         <img src="src/images/Interested_Images/ai.png" id={css.Two} alt="" />
         <div className={css.CardInfo} style={{ left: info2.x, top: info2.y }} onMouseLeave={() => setPosition({ ...position, info2: { x: 190, y: 185 }})}>
           <h2><strong>AI</strong></h2>
@@ -32,7 +36,8 @@ export const Interested = () => {
 
         </div>
       </div>
-      <div className={css.CardSmall} onClick={() => setPosition({ ...position, info3: { x: 0, y: 0 }})}>
+      <div className={theme === 'dark' ? css.CardSmallDark : css.CardSmallLight } 
+      onClick={() => setPosition({ ...position, info3: { x: 0, y: 0 }})} >
         <img src="src/images/Interested_Images/user-experience.png" id={css.Three} alt="" />
         <div className={css.CardInfo} style={{ left: info3.x, top: info3.y }} onMouseLeave={() => setPosition({ ...position, info3: { x: 190, y: 185 }})}>
           <h2><strong>UX | UI</strong></h2>
@@ -42,7 +47,8 @@ export const Interested = () => {
           
         </div>
       </div>
-      <div className={css.CardSmall} onClick={() => setPosition({ ...position, info4: { x: 0, y: 0 }})}>
+      <div className={theme === 'dark' ? css.CardSmallDark : css.CardSmallLight } 
+      onClick={() => setPosition({ ...position, info4: { x: 0, y: 0 }})} >
         <img src="src/images/Interested_Images/Optimization.png" id={css.Four} alt="" />
         <div className={css.CardInfo} style={{ left: info4.x, top: info4.y }} onMouseLeave={() => setPosition({ ...position, info4: { x: 190, y: 185 }})}>
           <h2><strong>Maintenance</strong></h2>
@@ -51,7 +57,8 @@ export const Interested = () => {
         
         </div>
       </div>
-      <div className={css.CardSmall} onClick={() => setPosition({ ...position, info5: { x: 0, y: 0 }})}>
+      <div className={theme === 'dark' ? css.CardSmallDark : css.CardSmallLight } 
+      onClick={() => setPosition({ ...position, info5: { x: 0, y: 0 }})} >
         <img src="src/images/Interested_Images/experiencia.png" id={css.Five} alt="" />
         <div className={css.CardInfo} style={{ left: info5.x, top: info5.y }} onMouseLeave={() => setPosition({ ...position, info5: { x: 190, y: 185 }})}>
           <h2><strong>Certificates</strong></h2>
@@ -60,7 +67,8 @@ export const Interested = () => {
 
         </div>
       </div>
-      <div className={css.CardSmall} onClick={() => setPosition({ ...position, info6: { x: 0, y: 0 }})}>
+      <div className={theme === 'dark' ? css.CardSmallDark : css.CardSmallLight } 
+      onClick={() => setPosition({ ...position, info6: { x: 0, y: 0 }})} >
         <img src="src/images/Interested_Images/tecnologia.png" id={css.Six} alt="" />
         <div className={css.CardInfo} style={{ left: info6.x, top: info6.y }} onMouseLeave={() => setPosition({ ...position, info6: { x: 190, y: 185 }})}>
           <h2><strong>Cloud Service</strong></h2>

@@ -5,7 +5,7 @@
     padding: 10px;
 }
 
-.CardSmall {
+.CardSmallLight {
     margin: 0 45px;
     overflow: hidden;
     position: relative;
@@ -13,14 +13,34 @@
     height: 185px;
 }
 
-.CardSmall img {
+.CardSmallDark {
+    margin: 0 45px;
+    overflow: hidden;
+    position: relative;
+    width: 205px;
+    height: 185px;
+}
+
+.CardSmallLight img {
     width: 175px;
     height: 175px;
     cursor: pointer;
     filter: drop-shadow(3px 4px 0.2em #394867);
 }
 
+.CardSmallDark img {
+    width: 175px;
+    height: 175px;
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 0.2em white);
+}
+
+.CardSmallDark img:hover {
+    filter: drop-shadow(3px 4px 0.2em #3C486B);
+}
+
 .CardInfo {
+    color: black;
     width: 200px;
     height: 180px;
     position: absolute;

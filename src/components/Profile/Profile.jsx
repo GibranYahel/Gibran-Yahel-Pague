@@ -1,13 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import css from './Profile.module.css'
+import { ThemeModeContext } from '../../context'
 
 export const Profile = () => {
+  const { theme } = useContext(ThemeModeContext)
   return (
     <div className={css.Profile}>
-        <img src="src/images/Profile_Img.jpg" alt="" />
+        <img src="src/images/Profile_Img.jpg" className={theme === 'dark' ? css.ImageDark : css.ImageLight} alt=""/>
         <div className={css.Name_Detail}>
           <h1>Gibran Yahel San Luis Sanchez</h1>
-          <p>Full-Stack - React - JavaScript - UI/UX</p> 
+          <p>Full-Stack - React - JavaScript - UI/UX</p>
         </div>
         <div className={css.Presentation}>
             <strong>Hello!</strong>, my name is <strong>Gibran Yahel</strong> and I am a front-end developer. With Two years of
