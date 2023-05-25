@@ -11,21 +11,32 @@
     border-radius: 10px;
 }
 
-.card {
+.cardLight {
+    color: #213547;
     height: 320px;
     background: white;
     border-radius: 8px;
-    overflow: hidden;
-    
+    overflow: hidden;  
 }
 
-.card:hover img {
+.cardDark {
+    height: 320px;
+    background: #474d56;
+    border-radius: 8px;
+    overflow: hidden; 
+}
+
+.cardLight:hover img {
+    transition: 0.4s;
+    transform: scale(1.1);
+}
+
+.cardDark:hover img {
     transition: 0.4s;
     transform: scale(1.1);
 }
 
 .cardInfo {
-    color: #213547;
     display: grid;
     justify-content: center;
     align-items: center;

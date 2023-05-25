@@ -1,9 +1,10 @@
-import { useEffect, useState } from 'react'
+import { useState, useContext } from 'react'
 import css from './Weather.module.css'
 import axios from 'axios'
+import { ThemeModeContext } from '../context'
 
 export const Weather = () => {
-
+  const { theme } = useContext(ThemeModeContext);
   const key = '9babd78908142e8f18785bc01cab05c8'
 
   const [data, setData] = useState({})
@@ -15,28 +16,32 @@ export const Weather = () => {
     if (event.key === 'Enter'){
       axios.get(url).then((response) => {
         setData(response.data)
-        console.log(response.data)
       })
       setLocation('');
     }  
   }
 
+  const divStyle = {
+    border: theme === 'dark' ? '2px solid rgba( 225, 225, 225, .8)' : '2px solid rgba( 0, 0, 0, .8)',
+  };
+
   return (
     <>
       <div className={css.container}>
         <p id={css.city}>{data.name}</p>
-        <div className={css.weather}>
-          <input 
+        <div className={css.weather} style={divStyle}>
+          <input
+            style={divStyle}
             value={ location }
             onChange={ event => setLocation(event.target.value )}
             onKeyDown={ searchLocation }
-            placeholder='Ej. México'
+            placeholder='Ej.. Dallas'
             type="text" 
           />
           {data.main ? <h4>Temp<br /> <p>{data.main.temp.toFixed()}°C</p></h4> : <h4>Temp<br /> </h4>}
           {data.main ? <h4>Temp-Min <br /> <p id={css.min}>{data.main.temp_min.toFixed()}°C</p> </h4> : <h4>Temp-Min <br /> <p id={css.selectCity}>select a City</p> </h4>}
           {data.main ? <h4>Temp-Max <br /> <p id={css.max}>{data.main.temp_max.toFixed()}°C</p> </h4> : <h4>Temp-Max <br /> </h4>}
-          <img src="src/images/weather.gif" />
+          <img src="src/images/weather.gif"/>
         </div>
       </div>
     

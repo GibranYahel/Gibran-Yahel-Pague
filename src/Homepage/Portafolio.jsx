@@ -8,7 +8,7 @@ import { Interested } from '../components/Interested/Interested';
 import { ThemeModeContext } from '../context'
 
 export const Portafolio = () => {
-  const { theme } = useContext(ThemeModeContext)
+  const { theme } = useContext(ThemeModeContext);
   return (
     <div className={theme === 'dark' ? css.darkTheme : css.lightTheme}>
       <div className={css.Profile}>

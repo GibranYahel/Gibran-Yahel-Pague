@@ -9,7 +9,6 @@
     right: 35px;
     background-color: rgba( 0, 0, 0, 0.4);
     border-radius: 40px;
-    border: 2px solid rgba( 0, 0, 0, .8);
 }
 
 .Container {
@@ -22,6 +21,7 @@
     top: 22px;
     right: 350px;
     font-weight: bold;
+    z-index: 2;
 }
 
 #min{
@@ -48,7 +48,6 @@
     margin-left: 15px;
     border-radius: 5px;
     background-color: rgba( 0, 0, 0, .3);
-    border: 1px solid rgba( 0, 0, 0, .8);
     color: white;
     outline: none;
 }
@@ -62,7 +61,7 @@
     width: 40px;
     margin: 4px 0 0 8px; 
     border-radius: 50%;
-    border: 1px solid black;
+    border: 2px solid black;
 }
 
 .weather h4 {
@@ -89,7 +88,7 @@
 
 @media (max-width: 600px){
     .weather {
-        right: -2px;
+        right: 10px;
         width: 380px;
     }
 
