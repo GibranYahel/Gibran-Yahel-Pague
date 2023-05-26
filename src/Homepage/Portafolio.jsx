@@ -6,6 +6,7 @@ import { Weather } from './Weather';
 import { SliderHome } from '../components/Slider/SliderHome';
 import { Interested } from '../components/Interested/Interested';
 import { ThemeModeContext } from '../context'
+import { Education } from '../components/Education/Education';
 
 export const Portafolio = () => {
   const { theme } = useContext(ThemeModeContext);
@@ -24,7 +25,9 @@ export const Portafolio = () => {
         <hr />
       </div>
       <div className={css.WorkExp}> WorkExp </div>
-      <div className={css.Education}> Education </div>
+      <div className={css.Education}>
+        <Education />
+      </div>
       <div className={css.Social}> Social </div>
 
       <Weather />

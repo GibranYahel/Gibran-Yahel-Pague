@@ -56,12 +56,17 @@
     color: white;
 }
 
-.weather img {
+.weatherImg {
+    position: fixed;
+    right: 3%;
+    top: 21px;
     height: 40px;
     width: 40px;
     margin: 4px 0 0 8px; 
     border-radius: 50%;
     border: 2px solid black;
+    z-index: 2;
+    cursor: pointer;
 }
 
 .weather h4 {

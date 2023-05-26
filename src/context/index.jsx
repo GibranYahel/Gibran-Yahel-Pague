@@ -4,15 +4,20 @@ export const ThemeModeContext = createContext();
 
 export const ThemeModeProvider = ({children}) => {
     const [theme, setTheme] = useState('light');
+    const [isWeatherOpen, setIsWeatherOpen] = useState(false);
+    const toggleDivShow = () => {
+        setIsWeatherOpen(!isWeatherOpen);
+    };
     const toggleTheme = () => {
         setTheme(theme === 'dark' ? 'light' : 'dark');
-      };
-    console.log('THEME:', theme)
+    };
 
     return ( 
         <ThemeModeContext.Provider value={{
             theme,
-            toggleTheme
+            toggleTheme,
+            toggleDivShow,
+            isWeatherOpen
         }}>
             {children}
         </ThemeModeContext.Provider>
