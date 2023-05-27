@@ -8,34 +8,34 @@ export const SliderData = [{
     id: 0,
     name: 'Code Wars',
     detail: 'My favorite',
-    top: 'Visitar Packs',
+    top: 'See project',
     img: PruebaS1
 },
 {
     id: 1,
     name: 'Texture Packs',
     detail: 'El proyecto que me gusta mas',
-    top: 'Visitar Packs',
+    top: 'See project',
     img: PruebaS2
 },
 {
     id: 2,
     name: 'Sliders',
     detail: 'Sliders de ejemplos',
-    top: 'Visitar Sliders',
+    top: 'See project',
     img: PruebaS3
 },
 {
     id: 3,
     name: 'Mods',
     detail: 'Top de Mods',
-    top: 'Visitar Mods',
+    top: 'See project',
     img: PruebaS4
 },
 {
     id: 4,
-    name: 'cards with Animations',
-    detail: 'includes conditional renders',
-    top: 'SEE PROJECT',
+    name: 'Cards Rick',
+    detail: 'Conditional renders',
+    top: 'See project',
     img: PruebaS5
 }]
