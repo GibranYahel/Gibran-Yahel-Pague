@@ -32,7 +32,7 @@
     height: 380px;
     display: grid;
     grid-template-columns: auto auto auto;
-    border-right: 2px solid black;
+    border-right: 3px solid black;
 }
 
 .Experience {
@@ -43,9 +43,17 @@
     grid-template-columns: auto;
 }
 
+.ExperienceTop span:nth-child(1) {
+    position: absolute;
+    right: 3%;
+    bottom: 1487px;
+}
+
 .sectionTwo {
+    display: grid;
+    grid-template-columns: 35% 65%;
     width: 97%;
-    height: 340px;
+    height: 300px;
     margin: 0 1% 0;
     border: 6px solid rgb(255, 47, 47);
     border-radius: 15px;
@@ -57,4 +65,56 @@
     margin: 0 1% 0;
     border: 6px solid rgb(47, 141, 255);
     border-radius: 15px;
+}
+
+.ExperienceTop {
+    margin-left: 30px;
+    border-bottom: 3px solid black;
+    max-height: 235px;
+    width: 90%;
+}
+
+.ExperienceTop h1 {
+    margin: 0 0 10px 0;
+
+}
+
+.ExperienceTop ul {
+    padding-left: 40px;
+    font-size: 17px;
+}
+
+.ExperienceTop ul li{
+    padding-left: 10px;
+}
+
+.ExperienceBot {
+    margin-left: 30px;
+}
+
+.ExperienceBot h1 {
+    margin: 10px 0 0 0;
+}
+
+.ExperienceBot ul {
+    margin: 5px 0 0 0;
+}
+
+.ExperienceBot ul li{
+    padding-left: 10px;
+    font-size: 17px;
+}
+
+   /* half code partition */
+
+.infoDGETI {
+    width: 100%;
+    height: 380px;
+}
+
+.imageDGETI img {
+    width: 250px;
+    height: 250px;
+    margin: 20px 0 0 20px;
+    object-fit: scale-down;
 }
