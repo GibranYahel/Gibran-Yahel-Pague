@@ -18,7 +18,7 @@ export const Education = () => {
                     <div className={css.ExperienceTop}>
                         <span>07/2021 - 05/2023</span>
                         <h1>Professional Education</h1>
-                        <span><strong>Full-Stack Develoer </strong>{'(Autodidact) / '} Desarrollo web - Platzi, Udemy</span>
+                        <span><strong>Full-Stack Develoer </strong>{'(Autodidact) / '} Web developmen - Platzi, Udemy</span>
                         <ul>
                             <li>Methodology of 3-Steps.</li>
                             <li>strong experience in developing interesting websites.</li>
@@ -45,11 +45,18 @@ export const Education = () => {
                     <img src="src/images/DGETI_logo.png" alt="" />
                 </div>
                 <div className={css.infoDGETI}>
-                    
+                    <h1>Dirección General de Educación Tecnológica Industrial</h1>
+                    <span><strong>Professional License </strong>{'(Student) / '} Electronics Technician - Technology, Robots</span>
+                    <ul>
+                        <li>Microcontrollers programming.</li>
+                        <li>Design, development, evaluation, testing and installation of robots.</li>
+                        <li>Implemented predictive maintenance programs.</li>
+                        <li>Operational and corrective functional support.</li>
+                        <li>Device support and maintenance.</li>
+                        <li>Software design.</li>
+                        <li>Sntegrated electronic circuits.</li>
+                    </ul>
                 </div>
-            </div>
-            <div className={css.sectionThree} >
-
             </div>
         </div>
     )
