@@ -8,34 +8,34 @@ export const SliderData = [{
     id: 0,
     name: 'Code Wars',
     detail: 'My favorite',
-    top: 'See project',
-    img: PruebaS1
+    img: PruebaS1,
+    url: 'https://www.codewars.com/users/Gibeeee'
 },
 {
     id: 1,
     name: 'Texture Packs',
     detail: 'El proyecto que me gusta mas',
-    top: 'See project',
-    img: PruebaS2
+    img: PruebaS2,
+    url: ''
 },
 {
     id: 2,
     name: 'Sliders',
     detail: 'Sliders de ejemplos',
-    top: 'See project',
-    img: PruebaS3
+    img: PruebaS3,
+    url: ''
 },
 {
     id: 3,
-    name: 'Mods',
-    detail: 'Top de Mods',
-    top: 'See project',
-    img: PruebaS4
+    name: 'Conditional Renders',
+    detail: 'Barrel - Files',
+    img: PruebaS4,
+    url: '/QuotesBreakinBad'
 },
 {
     id: 4,
-    name: 'Cards Rick',
-    detail: 'Conditional renders',
-    top: 'See project',
-    img: PruebaS5
+    name: 'Conditional Render',
+    detail: 'Cards - App',
+    img: PruebaS5,
+    url: '/CardsRick'
 }]

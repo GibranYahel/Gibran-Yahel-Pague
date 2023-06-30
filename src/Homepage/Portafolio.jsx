@@ -7,6 +7,7 @@ import { SliderHome } from '../components/Slider/SliderHome';
 import { Interested } from '../components/Interested/Interested';
 import { ThemeModeContext } from '../context'
 import { Education } from '../components/Education/Education';
+import { ContactMe } from '../components/ContactMe/ContactMe';
 
 export const Portafolio = () => {
   const { theme } = useContext(ThemeModeContext);
@@ -24,11 +25,13 @@ export const Portafolio = () => {
         <SliderHome />
         <hr />
       </div>
-      <div className={css.WorkExp}> WorkExp </div>
+      <div className={css.FeaturedProject}> Featured-Project </div>
       <div className={css.Education}>
         <Education />
       </div>
-      <div className={css.Social}> Social </div>
+      <div className={css.ContactMe}>
+        <ContactMe />
+      </div>
 
       <Weather />
       <ThemeButton />

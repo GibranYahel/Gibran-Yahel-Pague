@@ -28,13 +28,14 @@
 
 .cardLight:hover img {
     transition: 0.4s;
-    -webkit-transform: scale(1.1) rotate(-0.5deg);
-    transform: scale(1.1) rotate(-0.5deg);
+    -webkit-transform: scale(1.2) rotate(-1deg);
+    transform: scale(1.1) rotate(-0.8deg);
 }
 
 .cardDark:hover img {
     transition: 0.4s;
-    transform: scale(1.1);
+    -webkit-transform: scale(1.2) rotate(-1deg);
+    transform: scale(1.1) rotate(-0.8deg);
 }
 
 .cardInfo {
@@ -43,12 +44,12 @@
     align-items: center;
 }
 
-.cardLight:hover .cardInfo :nth-child(3) {
+.cardLight:hover .cardInfo p {
     color: white;
     background-color: #7B8FA1;
 }
 
-.cardDark:hover .cardInfo :nth-child(3) {
+.cardDark:hover .cardInfo p {
     color: black;
     background-color: #7B8FA1;
 }
@@ -61,7 +62,7 @@
     margin: 0;
 }
 
-.cardInfo :nth-child(3) {
+.cardInfo p {
     width: 100px;
     height: 20px;
     margin: 5px 0 0 20px;
@@ -70,6 +71,11 @@
     border-radius: 10px;
     cursor: pointer;
     transition: 0.55s;
+}
+
+.cardInfo a {
+    text-decoration: none;
+    color: inherit;
 }
 
 @media (max-width: 1191px) {

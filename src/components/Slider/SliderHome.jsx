@@ -5,6 +5,7 @@ import { SliderData } from "../../data/Slider.Home";
 import { ThemeModeContext } from '../../context'
 import css from './Slider.module.css'
 import Slider from 'react-slick';
+import { Link } from "react-router-dom";
 
 export const SliderHome = () => {
   const { theme } = useContext(ThemeModeContext);
@@ -57,7 +58,13 @@ export const SliderHome = () => {
             <div className={css.cardInfo}>
               <h1>{item.name}</h1>
               <h3>{item.detail}</h3>
-              <p>{item.top}</p>
+              { item.url.startsWith('/') ? (
+                  <p><Link to={item.url}> See Project</Link></p>
+                )
+                : (
+                  <p><a href={item.url}>See Project</a></p>
+                ) }
+              <p>{item.see}</p>
             </div>
           </div>
         ))}
