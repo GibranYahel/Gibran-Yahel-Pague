@@ -8,7 +8,7 @@ export const Education = () => {
                     <img src="src/images/Technologie_JavaScript.png" alt="" />
                     <img src="src/images/Technologie_HTML.png" alt="" />
                     <img src="src/images/Technologie_CSS.png" alt="" />
-                    <img src="src/images/Technologie_WebPack.png" alt="" />
+                    <img src="src/images/Technologie_AWS.png" alt="" />
                     <img src="src/images/Technologie_React.png" alt="" />
                     <img src="src/images/Technologie_Node.png" alt="" />
                     <img src="src/images/Technologie_Docker.png" alt="" />

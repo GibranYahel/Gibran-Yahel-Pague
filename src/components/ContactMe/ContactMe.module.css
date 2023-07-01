@@ -4,4 +4,5 @@
     display: grid;
     place-items: center;
     background: linear-gradient(white, #474d56);
+    border-radius: 8px;
 }

@@ -16,14 +16,14 @@ export const SliderData = [{
     name: 'Texture Packs',
     detail: 'El proyecto que me gusta mas',
     img: PruebaS2,
-    url: ''
+    url: '/QuotesBreakinBad'
 },
 {
     id: 2,
     name: 'Sliders',
     detail: 'Sliders de ejemplos',
     img: PruebaS3,
-    url: ''
+    url: '/QuotesBreakinBad'
 },
 {
     id: 3,

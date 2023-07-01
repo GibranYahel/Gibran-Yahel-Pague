@@ -35,6 +35,10 @@
     border-right: 3px solid black;
 }
 
+.Images :nth-child(5) {
+  animation: rotate 45s infinite linear;
+}
+
 .Experience {
     margin-top: 30px;
     width: 100%;
@@ -295,5 +299,14 @@
     .sectionTwo {
         height: 400px;
         width: 94%;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
     }
 }

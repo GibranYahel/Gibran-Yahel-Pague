@@ -1,3 +1,5 @@
+import { store } from './store'
+import { Provider } from 'react-redux'
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { ThemeModeProvider } from './context'
@@ -7,9 +9,13 @@ import { BrowserRouter } from 'react-router-dom'
 import './styles.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <ThemeModeProvider>
-    <BrowserRouter>
-    <App />
-    </BrowserRouter> 
-  </ThemeModeProvider>
+
+  <Provider store={ store } >
+    <ThemeModeProvider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter> 
+    </ThemeModeProvider>
+  </Provider>
+  
 );
