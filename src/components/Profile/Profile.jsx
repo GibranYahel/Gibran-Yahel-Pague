@@ -1,9 +1,11 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import css from './Profile.module.css'
-import { ThemeModeContext } from '../../context'
+import { useTheme } from '../../hooks'
 
 export const Profile = () => {
-  const { theme } = useContext(ThemeModeContext)
+
+  const { theme } = useTheme()
+
   return (
     <div className={css.Profile}>
         <img src="src/images/Profile_Img.jpg" className={theme === 'dark' ? css.ImageDark : css.ImageLight} alt=""/>
