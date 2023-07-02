@@ -1,16 +1,15 @@
-import React, { useContext } from 'react'
 import css from './Portafolio.module.css'
 import { ThemeButton } from '../components/ThemeButton/ThemeButton'
 import { Profile } from '../components/Profile/Profile';
 import { Weather } from './Weather';
 import { SliderHome } from '../components/Slider/SliderHome';
 import { Interested } from '../components/Interested/Interested';
-import { ThemeModeContext } from '../context'
 import { Education } from '../components/Education/Education';
 import { ContactMe } from '../components/ContactMe/ContactMe';
+import { useTheme } from '../hooks';
 
 export const Portafolio = () => {
-  const { theme } = useContext(ThemeModeContext);
+  const { theme } = useTheme();
   return (
     <div className={theme === 'dark' ? css.darkTheme : css.lightTheme}>
       <div className={css.Profile}>

@@ -9,15 +9,15 @@ export const useTheme = () => {
     const { theme } = useSelector( state => state.ui )
 
     const toggleTheme = () => {
-        theme 
-            ? dispatch(onThemeDark())
-            : dispatch(onThemeLight())
+        theme === 'dark'
+            ? dispatch(onThemeLight())
+            : dispatch(onThemeDark())
     }
 
 
     return {
         theme,
 
-        toggleTheme 
+        toggleTheme,
     }
 }

@@ -1,9 +1,9 @@
-import React, { useState, useContext } from 'react'
+import React, { useState } from 'react'
 import css from './Interested.module.css'
-import { ThemeModeContext } from '../../context'
+import { useTheme } from '../../hooks'
 
 export const Interested = () => {
-  const { theme } = useContext(ThemeModeContext)
+  const { theme } = useTheme(); 
   const [ position, setPosition ] = useState({ 
     info1: { x: 190, y: 185 },
     info2: { x: 190, y: 185 }, 

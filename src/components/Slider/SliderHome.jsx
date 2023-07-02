@@ -1,14 +1,13 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { useContext } from "react";
 import { SliderData } from "../../data/Slider.Home";
-import { ThemeModeContext } from '../../context'
 import css from './Slider.module.css'
 import Slider from 'react-slick';
 import { Link } from "react-router-dom";
+import { useTheme } from "../../hooks";
 
 export const SliderHome = () => {
-  const { theme } = useContext(ThemeModeContext);
+  const { theme } = useTheme();
   const settings = {
     dots: true,
     infinite: true,

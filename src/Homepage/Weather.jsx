@@ -1,12 +1,12 @@
 import { useState, useContext } from 'react'
 import css from './Weather.module.css'
 import axios from 'axios'
-import { ThemeModeContext } from '../context'
 import { useWeather } from '../hooks'
+import { useTheme } from '../hooks'
 
 export const Weather = () => {
   const { isWeatherOpen, toggleDivShow } = useWeather();
-  const { theme } = useContext(ThemeModeContext);
+  const { theme } = useTheme()
   const key = '9babd78908142e8f18785bc01cab05c8'
 
   const [data, setData] = useState({})

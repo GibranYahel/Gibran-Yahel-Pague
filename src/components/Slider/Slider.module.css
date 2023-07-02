@@ -8,7 +8,7 @@
     margin: 10px 0 0 20px;
     transition: 0.3s;
     object-fit: fill;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .cardLight {
@@ -28,14 +28,14 @@
 
 .cardLight:hover img {
     transition: 0.4s;
-    -webkit-transform: scale(1.2) rotate(-1deg);
-    transform: scale(1.1) rotate(-0.8deg);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .cardDark:hover img {
     transition: 0.4s;
-    -webkit-transform: scale(1.2) rotate(-1deg);
-    transform: scale(1.1) rotate(-0.8deg);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .cardInfo {
